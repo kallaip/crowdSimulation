@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/crowdSimulation.dir/chicken.cpp.o"
   "CMakeFiles/crowdSimulation.dir/main.cpp.o"
+  "CMakeFiles/crowdSimulation.dir/player.cpp.o"
   "crowdSimulation"
   "crowdSimulation.pdb"
 )

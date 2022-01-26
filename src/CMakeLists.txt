@@ -9,5 +9,5 @@ set(CMAKE_CXX_STANDARD 11)
 # The CONFIG flag makes sure we get OGRE instead of OGRE-next
 find_package(OGRE REQUIRED COMPONENTS Bites CONFIG)
 
-add_executable(crowdSimulation main.cpp)
+add_executable(crowdSimulation main.cpp player.cpp chicken.cpp)
 target_link_libraries(crowdSimulation OgreBites)

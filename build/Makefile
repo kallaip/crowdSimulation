@@ -142,6 +142,33 @@ crowdSimulation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowdSimulation.dir/build.make CMakeFiles/crowdSimulation.dir/build
 .PHONY : crowdSimulation/fast
 
+chicken.o: chicken.cpp.o
+
+.PHONY : chicken.o
+
+# target to build an object file
+chicken.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowdSimulation.dir/build.make CMakeFiles/crowdSimulation.dir/chicken.cpp.o
+.PHONY : chicken.cpp.o
+
+chicken.i: chicken.cpp.i
+
+.PHONY : chicken.i
+
+# target to preprocess a source file
+chicken.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowdSimulation.dir/build.make CMakeFiles/crowdSimulation.dir/chicken.cpp.i
+.PHONY : chicken.cpp.i
+
+chicken.s: chicken.cpp.s
+
+.PHONY : chicken.s
+
+# target to generate assembly for a file
+chicken.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowdSimulation.dir/build.make CMakeFiles/crowdSimulation.dir/chicken.cpp.s
+.PHONY : chicken.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -169,6 +196,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowdSimulation.dir/build.make CMakeFiles/crowdSimulation.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+player.o: player.cpp.o
+
+.PHONY : player.o
+
+# target to build an object file
+player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowdSimulation.dir/build.make CMakeFiles/crowdSimulation.dir/player.cpp.o
+.PHONY : player.cpp.o
+
+player.i: player.cpp.i
+
+.PHONY : player.i
+
+# target to preprocess a source file
+player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowdSimulation.dir/build.make CMakeFiles/crowdSimulation.dir/player.cpp.i
+.PHONY : player.cpp.i
+
+player.s: player.cpp.s
+
+.PHONY : player.s
+
+# target to generate assembly for a file
+player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowdSimulation.dir/build.make CMakeFiles/crowdSimulation.dir/player.cpp.s
+.PHONY : player.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -178,9 +232,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... crowdSimulation"
+	@echo "... chicken.o"
+	@echo "... chicken.i"
+	@echo "... chicken.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... player.o"
+	@echo "... player.i"
+	@echo "... player.s"
 .PHONY : help
 
 

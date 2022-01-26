@@ -1,11 +1,22 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
+#include <exception>
+#include <iostream>
+
+#include "Ogre.h"
+#include "OgreApplicationContext.h"
+#include "OgreInput.h"
+#include "OgreRTShaderSystem.h"
+#include "OgreCameraMan.h"
+
+using namespace Ogre;
+using namespace OgreBites;
 
 class player
 {
     public:
-        player(int xPos = 0, int yPos = 0);
+        player();
         virtual ~player();
 
         int getXPos() { return xPos; }

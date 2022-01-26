@@ -11,6 +11,7 @@
 #include "OgreCameraMan.h"
 
 #include "defaults.h"
+#include "chicken.h"
 
 using namespace Ogre;
 using namespace OgreBites;
@@ -22,7 +23,7 @@ class crowdSimulation:
 public:
     crowdSimulation();
     virtual ~crowdSimulation();
-
+    Vector3 testVector;
     void setup();
     bool keyPressed(const KeyboardEvent& evt);
 };
@@ -72,13 +73,10 @@ void crowdSimulation::setup()
     scnMgr->setShadowTechnique(ShadowTechnique::SHADOWTYPE_STENCIL_ADDITIVE);
    // scnMgr->setSkyDome(true, "Examples/CloudySky", 10, 8);
 
-    Entity* chickenEntity = scnMgr->createEntity("chicken_body.mesh");
-    chickenEntity->setCastShadows(true);
-    chickenEntity->setMaterialName("Chicken_body_mat");
-    SceneNode* cn = scnMgr->getRootSceneNode()->createChildSceneNode("ChickenNode");
-    cn->attachObject(chickenEntity);
-    cn->setScale(1.0f,1.0f,1.0f);
-    cn->setPosition(Vector3(GROUND_X/2,1,GROUND_Z/2));
+
+    chicken* ch = new chicken();
+    ch->setupEntity(scnMgr, Vector3(GROUND_X/2,1,GROUND_Z/2));
+
     Plane plane(Vector3::UNIT_Y, 0);
 
     MeshManager::getSingleton().createPlane(

@@ -93,12 +93,12 @@ clean: CMakeFiles/crowdSimulation.dir/clean
 CMakeFiles/crowdSimulation.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowdSimulation.dir/build.make CMakeFiles/crowdSimulation.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/crowdSimulation.dir/build.make CMakeFiles/crowdSimulation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kajla/empir/Ogre-projects/crowdSimulation/build/CMakeFiles --progress-num=1,2 "Built target crowdSimulation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kajla/empir/Ogre-projects/crowdSimulation/build/CMakeFiles --progress-num=1,2,3,4 "Built target crowdSimulation"
 .PHONY : CMakeFiles/crowdSimulation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/crowdSimulation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kajla/empir/Ogre-projects/crowdSimulation/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kajla/empir/Ogre-projects/crowdSimulation/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/crowdSimulation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kajla/empir/Ogre-projects/crowdSimulation/build/CMakeFiles 0
 .PHONY : CMakeFiles/crowdSimulation.dir/rule

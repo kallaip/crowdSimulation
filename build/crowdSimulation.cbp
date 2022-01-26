@@ -1,125 +1,112 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CodeBlocks_project_file>
-	<FileVersion major="1" minor="6" />
+	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="crowdSimulation" />
-		<Option makefile_is_custom="1" />
-		<Option compiler="gcc" />
-		<Option virtualFolders="CMake Files/" />
+		<Option title="crowdSimulation"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option type="4" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add directory="include" />
-				</Compiler>
+				<Option working_dir="/home/kajla/empir/Ogre-projects/crowdSimulation/build"/>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 all' />
-					<CompileFile command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
-					<Clean command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean' />
-					<DistClean command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean' />
-					<AskRebuildNeeded command="$make -q -f $makefile $target" />
-					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option type="4" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add directory="include" />
-				</Compiler>
+				<Option working_dir="/home/kajla/empir/Ogre-projects/crowdSimulation/build"/>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 rebuild_cache' />
-					<CompileFile command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
-					<Clean command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean' />
-					<DistClean command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean' />
-					<AskRebuildNeeded command="$make -q -f $makefile $target" />
-					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option type="4" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add directory="include" />
-				</Compiler>
+				<Option working_dir="/home/kajla/empir/Ogre-projects/crowdSimulation/build"/>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 edit_cache' />
-					<CompileFile command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
-					<Clean command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean' />
-					<DistClean command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean' />
-					<AskRebuildNeeded command="$make -q -f $makefile $target" />
-					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="crowdSimulation">
-				<Option output="/home/kajla/empir/Ogre-projects/crowdSimulation/build/crowdSimulation" prefix_auto="0" extension_auto="0" />
-				<Option working_dir="/home/kajla/empir/Ogre-projects/crowdSimulation/build" />
-				<Option object_output="./" />
-				<Option type="1" />
-				<Option compiler="gcc" />
+				<Option output="/home/kajla/empir/Ogre-projects/crowdSimulation/build/crowdSimulation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kajla/empir/Ogre-projects/crowdSimulation/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/include/OGRE/Bites" />
-					<Add directory="/usr/local/include/OGRE" />
-					<Add directory="/usr/local/include/OGRE/Overlay" />
-					<Add directory="/usr/local/include/OGRE/RTShaderSystem" />
-					<Add directory="/usr/include/c++/11" />
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/11" />
-					<Add directory="/usr/include/c++/11/backward" />
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include" />
-					<Add directory="/usr/local/include" />
-					<Add directory="/usr/include/x86_64-linux-gnu" />
-					<Add directory="/usr/include" />
-					<Add directory="include" />
+					<Add directory="/usr/local/include/OGRE/Bites"/>
+					<Add directory="/usr/local/include/OGRE"/>
+					<Add directory="/usr/local/include/OGRE/Overlay"/>
+					<Add directory="/usr/local/include/OGRE/RTShaderSystem"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 crowdSimulation' />
-					<CompileFile command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
-					<Clean command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean' />
-					<DistClean command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean' />
-					<AskRebuildNeeded command="$make -q -f $makefile $target" />
-					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 crowdSimulation"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="crowdSimulation/fast">
-				<Option output="/home/kajla/empir/Ogre-projects/crowdSimulation/build/crowdSimulation" prefix_auto="0" extension_auto="0" />
-				<Option working_dir="/home/kajla/empir/Ogre-projects/crowdSimulation/build" />
-				<Option object_output="./" />
-				<Option type="1" />
-				<Option compiler="gcc" />
+				<Option output="/home/kajla/empir/Ogre-projects/crowdSimulation/build/crowdSimulation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kajla/empir/Ogre-projects/crowdSimulation/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/include/OGRE/Bites" />
-					<Add directory="/usr/local/include/OGRE" />
-					<Add directory="/usr/local/include/OGRE/Overlay" />
-					<Add directory="/usr/local/include/OGRE/RTShaderSystem" />
-					<Add directory="/usr/include/c++/11" />
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/11" />
-					<Add directory="/usr/include/c++/11/backward" />
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include" />
-					<Add directory="/usr/local/include" />
-					<Add directory="/usr/include/x86_64-linux-gnu" />
-					<Add directory="/usr/include" />
-					<Add directory="include" />
+					<Add directory="/usr/local/include/OGRE/Bites"/>
+					<Add directory="/usr/local/include/OGRE"/>
+					<Add directory="/usr/local/include/OGRE/Overlay"/>
+					<Add directory="/usr/local/include/OGRE/RTShaderSystem"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 crowdSimulation/fast' />
-					<CompileFile command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
-					<Clean command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean' />
-					<DistClean command='/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean' />
-					<AskRebuildNeeded command="$make -q -f $makefile $target" />
-					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 crowdSimulation/fast"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/kajla/empir/Ogre-projects/crowdSimulation/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="../src/CMakeLists.txt">
-			<Option virtualFolder="CMake Files/" />
+		<Unit filename="/home/kajla/empir/Ogre-projects/crowdSimulation/src/chicken.cpp">
+			<Option target="crowdSimulation"/>
 		</Unit>
-		<Unit filename="../src/defaults.h" />
-		<Unit filename="../src/main.cpp">
-			<Option target="crowdSimulation" />
+		<Unit filename="/home/kajla/empir/Ogre-projects/crowdSimulation/src/chicken.h">
+			<Option target="crowdSimulation"/>
 		</Unit>
-		<Unit filename="../src/player.cpp" />
-		<Unit filename="../src/player.h" />
-		<Extensions />
+		<Unit filename="/home/kajla/empir/Ogre-projects/crowdSimulation/src/main.cpp">
+			<Option target="crowdSimulation"/>
+		</Unit>
+		<Unit filename="/home/kajla/empir/Ogre-projects/crowdSimulation/src/player.cpp">
+			<Option target="crowdSimulation"/>
+		</Unit>
+		<Unit filename="/home/kajla/empir/Ogre-projects/crowdSimulation/src/player.h">
+			<Option target="crowdSimulation"/>
+		</Unit>
+		<Unit filename="/home/kajla/empir/Ogre-projects/crowdSimulation/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
 	</Project>
 </CodeBlocks_project_file>

@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/kajla/empir/Ogre-projects/crowdSimulation/src/chicken.cpp" "/home/kajla/empir/Ogre-projects/crowdSimulation/build/CMakeFiles/crowdSimulation.dir/chicken.cpp.o"
   "/home/kajla/empir/Ogre-projects/crowdSimulation/src/main.cpp" "/home/kajla/empir/Ogre-projects/crowdSimulation/build/CMakeFiles/crowdSimulation.dir/main.cpp.o"
+  "/home/kajla/empir/Ogre-projects/crowdSimulation/src/player.cpp" "/home/kajla/empir/Ogre-projects/crowdSimulation/build/CMakeFiles/crowdSimulation.dir/player.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
