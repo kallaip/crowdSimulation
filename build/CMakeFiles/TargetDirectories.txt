@@ -1,0 +1,3 @@
+/home/kajla/empir/Ogre-projects/crowdSimulation/build/CMakeFiles/rebuild_cache.dir
+/home/kajla/empir/Ogre-projects/crowdSimulation/build/CMakeFiles/edit_cache.dir
+/home/kajla/empir/Ogre-projects/crowdSimulation/build/CMakeFiles/crowdSimulation.dir
