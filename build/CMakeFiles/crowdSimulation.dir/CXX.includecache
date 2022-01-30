@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/kajla/empir/Ogre-projects/crowdSimulation/src/chicken.cpp
-chicken.h
-/home/kajla/empir/Ogre-projects/crowdSimulation/src/chicken.h
-
 /home/kajla/empir/Ogre-projects/crowdSimulation/src/chicken.h
 Ogre.h
 /home/kajla/empir/Ogre-projects/crowdSimulation/src/Ogre.h
@@ -21,8 +17,42 @@ OgreRTShaderSystem.h
 /home/kajla/empir/Ogre-projects/crowdSimulation/src/OgreRTShaderSystem.h
 OgreCameraMan.h
 /home/kajla/empir/Ogre-projects/crowdSimulation/src/OgreCameraMan.h
+OgreNode.h
+/home/kajla/empir/Ogre-projects/crowdSimulation/src/OgreNode.h
 player.h
 /home/kajla/empir/Ogre-projects/crowdSimulation/src/player.h
+
+/home/kajla/empir/Ogre-projects/crowdSimulation/src/defaults.h
+
+/home/kajla/empir/Ogre-projects/crowdSimulation/src/main.cpp
+exception
+-
+iostream
+-
+vector
+-
+time.h
+-
+string
+-
+Windows.h
+-
+unistd.h
+-
+Ogre.h
+/home/kajla/empir/Ogre-projects/crowdSimulation/src/Ogre.h
+OgreApplicationContext.h
+/home/kajla/empir/Ogre-projects/crowdSimulation/src/OgreApplicationContext.h
+OgreInput.h
+/home/kajla/empir/Ogre-projects/crowdSimulation/src/OgreInput.h
+OgreRTShaderSystem.h
+/home/kajla/empir/Ogre-projects/crowdSimulation/src/OgreRTShaderSystem.h
+OgreCameraMan.h
+/home/kajla/empir/Ogre-projects/crowdSimulation/src/OgreCameraMan.h
+defaults.h
+/home/kajla/empir/Ogre-projects/crowdSimulation/src/defaults.h
+chicken.h
+/home/kajla/empir/Ogre-projects/crowdSimulation/src/chicken.h
 
 /home/kajla/empir/Ogre-projects/crowdSimulation/src/player.h
 exception

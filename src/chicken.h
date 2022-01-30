@@ -6,7 +6,7 @@
 #include "OgreInput.h"
 #include "OgreRTShaderSystem.h"
 #include "OgreCameraMan.h"
-
+#include "OgreNode.h"
 #include "player.h"
 
 using namespace Ogre;
@@ -15,10 +15,11 @@ using namespace OgreBites;
 class chicken : public player
 {
     public:
-        chicken();
-        virtual ~chicken();
-        void setupEntity(SceneManager* scnMgr, Vector3 position );
-
+    chicken();
+    virtual ~chicken();
+    void setupEntity(SceneManager* scnMgr, Vector3 position, const String& name );
+    void lookAt(const Vector3& targetPoint, Node::TransformSpace relativeTo = Node::TransformSpace::TS_PARENT,
+                const Vector3& localDirectionVector = Vector3::UNIT_X);
     protected:
 
     private:

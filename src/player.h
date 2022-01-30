@@ -19,16 +19,14 @@ class player
         player();
         virtual ~player();
 
-        int getXPos() { return xPos; }
-        void setXPos(int val) { xPos = val; }
-        int getYPos() { return yPos; }
-        void setYPos(int val) { yPos = val; }
+        Vector3 getPosition() { return position; }
+        void setPosition(Vector3 val) { position = val; }
+
         Vector3 getDirection() { return direction; }
         void setDirection(Vector3 val) { direction = val; }
 
     protected:
-        int xPos;
-        int yPos;
+        Vector3 position;
         Vector3 direction;
 
     private:

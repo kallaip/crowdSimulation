@@ -3,6 +3,15 @@
 -------------------------------------------------------------------------*/
 #include <exception>
 #include <iostream>
+#include <vector>
+#include <time.h>
+#include <string>
+
+#ifdef _WIN32
+#include <Windows.h>
+#else
+#include <unistd.h>
+#endif
 
 #include "Ogre.h"
 #include "OgreApplicationContext.h"
@@ -13,6 +22,7 @@
 #include "defaults.h"
 #include "chicken.h"
 
+using namespace std;
 using namespace Ogre;
 using namespace OgreBites;
 
@@ -68,17 +78,36 @@ void crowdSimulation::setup()
     vp->setBackgroundColour(ColourValue(0.4, 0.7, 0.7));
 
     cam->setAspectRatio(Real(vp->getActualWidth()) / Real(vp->getActualHeight()));
-
     scnMgr->setAmbientLight(ColourValue(0.8, 0.8, 0.8));
     scnMgr->setShadowTechnique(ShadowTechnique::SHADOWTYPE_STENCIL_ADDITIVE);
-   // scnMgr->setSkyDome(true, "Examples/CloudySky", 10, 8);
 
 
-    chicken* ch = new chicken();
-    ch->setupEntity(scnMgr, Vector3(GROUND_X/2,1,GROUND_Z/2));
+    int chicken_num = 10;
+    std::vector<chicken*> chickens((size_t) chicken_num);
+    time_t tm;
+    int x,z;
+    for(int i=0; i<chicken_num; i++)
+    {
+        srand(time(&tm)+x*z);
+        x = rand() % GROUND_X;
+        z = rand() % GROUND_Z;
+        cout << "Chicken_" << i << ": ("  << x << ", " << z << ") " << endl;
+
+        chickens[i] = new chicken();
+        String chicken_name = "chicken_";
+        chicken_name.append(to_string(i));
+        chickens[i]->setupEntity(scnMgr, Vector3( x, 1.4f, z ), chicken_name.c_str());
+
+        if (i>1)
+        {
+           srand(time(&tm));
+           int l = rand() % i;
+           chickens[i]->lookAt(chickens[l]->getPosition());
+        }
+        sleep(0.16846934);
+    }
 
     Plane plane(Vector3::UNIT_Y, 0);
-
     MeshManager::getSingleton().createPlane(
             "ground", RGN_DEFAULT,
             plane,
@@ -95,16 +124,6 @@ void crowdSimulation::setup()
     groundEntity->setMaterialName("sand");
 
 //==================================
-/*    Light* spotLight = scnMgr->createLight("SpotLight");
-    spotLight->setDiffuseColour(0, 0, 1.0);
-    spotLight->setSpecularColour(0, 0, 1.0);
-    spotLight->setType(Light::LT_SPOTLIGHT);
-    SceneNode* spotLightNode = scnMgr->getRootSceneNode()->createChildSceneNode();
-    spotLightNode->attachObject(spotLight);
-    spotLightNode->setDirection(-1, -1, 0);
-    spotLightNode->setPosition(Vector3(GROUND_X/2, GROUND_X*2, GROUND_Z/2));
-    spotLight->setSpotlightRange(Degree(35), Degree(50));
-*/
     Light* directionalLight = scnMgr->createLight("DirectionalLight");
     directionalLight->setType(Light::LT_DIRECTIONAL);
     directionalLight->setDiffuseColour(ColourValue(0.4, 0.3, 0.3));
@@ -112,6 +131,7 @@ void crowdSimulation::setup()
     SceneNode* directionalLightNode = scnMgr->getRootSceneNode()->createChildSceneNode();
     directionalLightNode->attachObject(directionalLight);
     directionalLightNode->setDirection(Vector3(0, -1, 1));
+
 
     Light* pointLight = scnMgr->createLight("PointLight");
     pointLight->setType(Light::LT_POINT);
