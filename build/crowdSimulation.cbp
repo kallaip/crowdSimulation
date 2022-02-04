@@ -103,13 +103,13 @@
 		<Unit filename="../src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files/" />
 		</Unit>
+		<Unit filename="../src/TimerManager.h" />
 		<Unit filename="../src/chicken.cpp">
 			<Option target="crowdSimulation" />
 		</Unit>
 		<Unit filename="../src/chicken.h">
 			<Option target="crowdSimulation" />
 		</Unit>
-		<Unit filename="../src/defaults.h" />
 		<Unit filename="../src/main.cpp">
 			<Option target="crowdSimulation" />
 		</Unit>

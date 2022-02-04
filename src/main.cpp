@@ -86,6 +86,7 @@ void crowdSimulation::setup()
     std::vector<chicken*> chickens((size_t) chicken_num);
     time_t tm;
     int x,z;
+
     for(int i=0; i<chicken_num; i++)
     {
         srand(time(&tm)+x*z);
