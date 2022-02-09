@@ -4,6 +4,7 @@
 CMakeFiles/crowdSimulation.dir/chicken.cpp.o
  /home/kajla/empir/Ogre-projects/crowdSimulation/src/chicken.cpp
  /home/kajla/empir/Ogre-projects/crowdSimulation/src/chicken.h
+ /home/kajla/empir/Ogre-projects/crowdSimulation/src/defaults.h
  /home/kajla/empir/Ogre-projects/crowdSimulation/src/player.h
  /usr/local/include/OGRE/Bites/OgreApplicationContext.h
  /usr/local/include/OGRE/Bites/OgreApplicationContextBase.h
@@ -409,6 +410,7 @@ CMakeFiles/crowdSimulation.dir/main.cpp.o
  /usr/local/include/OGRE/Threading/OgreThreadHeadersSTD.h
  /usr/local/include/OGRE/Threading/OgreThreadHeadersTBB.h
 CMakeFiles/crowdSimulation.dir/player.cpp.o
+ /home/kajla/empir/Ogre-projects/crowdSimulation/src/defaults.h
  /home/kajla/empir/Ogre-projects/crowdSimulation/src/player.cpp
  /home/kajla/empir/Ogre-projects/crowdSimulation/src/player.h
  /usr/local/include/OGRE/Bites/OgreApplicationContext.h

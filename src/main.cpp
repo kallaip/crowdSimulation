@@ -36,6 +36,8 @@ public:
     Vector3 testVector;
     void setup();
     bool keyPressed(const KeyboardEvent& evt);
+    bool frameRenderingQueued(const FrameEvent& evt);
+    std::vector<chicken*> chickens;
 };
 
 
@@ -83,7 +85,6 @@ void crowdSimulation::setup()
 
 
     int chicken_num = 10;
-    std::vector<chicken*> chickens((size_t) chicken_num);
     time_t tm;
     int x,z;
 
@@ -94,11 +95,11 @@ void crowdSimulation::setup()
         z = rand() % GROUND_Z;
         cout << "Chicken_" << i << ": ("  << x << ", " << z << ") " << endl;
 
-        chickens[i] = new chicken();
+        chickens.push_back( new chicken() );
         String chicken_name = "chicken_";
         chicken_name.append(to_string(i));
         chickens[i]->setupEntity(scnMgr, Vector3( x, 1.4f, z ), chicken_name.c_str());
-
+        chickens[i]->setVelocity(5.0f);
         if (i>1)
         {
            srand(time(&tm));
@@ -150,6 +151,18 @@ bool crowdSimulation::keyPressed(const KeyboardEvent& evt)
     if (evt.keysym.sym == SDLK_ESCAPE)
     {
         getRoot()->queueEndRendering();
+    }
+    return true;
+}
+
+bool crowdSimulation::frameRenderingQueued(const FrameEvent& evt)
+{
+
+    // move all the chickens
+    vector<chicken*>::iterator it;
+    for(it = chickens.begin(); it != chickens.end(); it++ )
+    {
+        (*it)->move(evt.timeSinceLastFrame);
     }
     return true;
 }
